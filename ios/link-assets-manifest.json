@@ -1,0 +1,113 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/CormorantGaramond-Bold.ttf",
+      "sha1": "723ebc9a1228f23b63cccfad86dd7e93fcc447a2"
+    },
+    {
+      "path": "src/assets/fonts/CormorantGaramond-Light.ttf",
+      "sha1": "063d4a5c498af3624e7031fbfa19409cd7e130c1"
+    },
+    {
+      "path": "src/assets/fonts/CormorantGaramond-Medium.ttf",
+      "sha1": "845742702556d4a2877e8a1d648f9aee78d77495"
+    },
+    {
+      "path": "src/assets/fonts/CormorantGaramond-Regular.ttf",
+      "sha1": "e6f212e20e9b26cfd5efb7b36880c3ad4362094b"
+    },
+    {
+      "path": "src/assets/fonts/CormorantGaramond-SemiBold.ttf",
+      "sha1": "c6454efc270b800dae4d4ed6b830f4235ff586b5"
+    },
+    {
+      "path": "src/assets/fonts/CormorantInfant-Bold.ttf",
+      "sha1": "ad670a79fd09b90ac6eafbbf7d3b95bf630150a1"
+    },
+    {
+      "path": "src/assets/fonts/CormorantInfant-Light.ttf",
+      "sha1": "e2b2db5065cd8d6b1bcb4df71926fe45261c5f04"
+    },
+    {
+      "path": "src/assets/fonts/CormorantInfant-Medium.ttf",
+      "sha1": "e4cb4e2573b27479c2237d149f73652b3f5508c9"
+    },
+    {
+      "path": "src/assets/fonts/CormorantInfant-Regular.ttf",
+      "sha1": "87f188c863ff96944b072a0a5a6a9d55d95d3376"
+    },
+    {
+      "path": "src/assets/fonts/CormorantInfant-SemiBold.ttf",
+      "sha1": "98f146fb8acab3b953f20b76d4823a4dbe3fbe97"
+    },
+    {
+      "path": "src/assets/fonts/Harmattan-Bold.ttf",
+      "sha1": "fa55b63d29ecc73b0b34b31ea31a4f6edcb88cfa"
+    },
+    {
+      "path": "src/assets/fonts/Harmattan-Medium.ttf",
+      "sha1": "241ef72946e92ae6fadf6a5c8cdc65132d60c8fe"
+    },
+    {
+      "path": "src/assets/fonts/Harmattan-Regular.ttf",
+      "sha1": "18c73cfa744af6c604b429d96e1d755db046ead9"
+    },
+    {
+      "path": "src/assets/fonts/Harmattan-SemiBold.ttf",
+      "sha1": "0a9c8c2350b94e8a5f8c6131bf5a8929b8169ca1"
+    },
+    {
+      "path": "src/assets/fonts/Lustria-Regular.ttf",
+      "sha1": "1092ed608df50193520a6aae7671cc23dc6bf71a"
+    },
+    {
+      "path": "src/assets/images/apple.png",
+      "sha1": "b61fb51054874da1c9b6df0d8474d6ed7ed57ef8"
+    },
+    {
+      "path": "src/assets/images/google.png",
+      "sha1": "6623144c93519b4bd05fbab19b95d051c167b407"
+    },
+    {
+      "path": "src/assets/images/konark1.jpg",
+      "sha1": "dec196cc0f62ae13c4b899a35779e49c09178e02"
+    },
+    {
+      "path": "src/assets/images/konark2.jpg",
+      "sha1": "f637ba4483e9431b9b39e54b189791c8a2efc7cb"
+    },
+    {
+      "path": "src/assets/images/konark3.jpg",
+      "sha1": "1105f12713c0c6a34fa52d33c4ff2a786ed8a145"
+    },
+    {
+      "path": "src/assets/images/nature1.jpg",
+      "sha1": "1478c4f647be707317f8c90cb47f459be9d7cd50"
+    },
+    {
+      "path": "src/assets/images/nature2.jpg",
+      "sha1": "fb4018c9cd4370e00d42e2bb26b739e809d2ba60"
+    },
+    {
+      "path": "src/assets/images/ok.jpg",
+      "sha1": "1f0ee532dc2a1f10a98d062e4430f3ce97661710"
+    },
+    {
+      "path": "src/assets/images/ok1.jpg",
+      "sha1": "635bed6a549f11dfef6b768f082c89849537ef6c"
+    },
+    {
+      "path": "src/assets/images/ok2.jpg",
+      "sha1": "e4f315131a213a55d6c6419851155a59d97127d9"
+    },
+    {
+      "path": "src/assets/images/ok3.jpg",
+      "sha1": "c529ab125f00cd0909b1973f9ef269305f204a85"
+    },
+    {
+      "path": "src/assets/images/temple1.jpg",
+      "sha1": "a508626c736ba3a58fb037fefd28f5b069ad9b17"
+    }
+  ]
+}
