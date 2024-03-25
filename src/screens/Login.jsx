@@ -8,11 +8,42 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {COLORS, FONTFAMILY, FONTSIZE, SPACING} from '../theme/Theme';
 import LinearGradient from 'react-native-linear-gradient';
+import {
+  GoogleSignin,
+  statusCodes,
+} from '@react-native-google-signin/google-signin';
+import {GOOGLE_CLIENT_ID} from '@env';
 
 const Login = () => {
+  const [userInfo, setUserInfo] = useState(null);
+  const handleGoogleSignIn = async () => {
+    try {
+      await GoogleSignin.hasPlayServices();
+      const res = await GoogleSignin.signIn();
+      if (res) {
+        console.log(res.user);
+        setUserInfo(res.user);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const handleAppleSignIn = async () => {
+    try {
+      await GoogleSignin.signOut();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    GoogleSignin.configure({webClientId: GOOGLE_CLIENT_ID});
+  }, []);
+
   return (
     <SafeAreaView style={{flex: 1, width: '100%', height: '100%'}}>
       <ImageBackground
@@ -26,13 +57,19 @@ const Login = () => {
             <Text style={styles.Subheading}>
               Embark on a Journey of Discovery
             </Text>
-            <TouchableOpacity activeOpacity={0.8} style={styles.Button}>
+            <TouchableOpacity
+              onPress={() => handleGoogleSignIn()}
+              activeOpacity={0.8}
+              style={styles.Button}>
               <Image
                 style={styles.Icon}
                 source={require('../assets/images/google.png')}></Image>
               <Text style={styles.ButtonText}>Continue with Google</Text>
             </TouchableOpacity>
-            <TouchableOpacity activeOpacity={0.8} style={styles.Button}>
+            <TouchableOpacity
+              onPress={() => handleAppleSignIn()}
+              activeOpacity={0.8}
+              style={styles.Button}>
               <Image
                 style={styles.Icon}
                 source={require('../assets/images/apple.png')}></Image>
