@@ -1,5 +1,5 @@
 import {
-  Dimensions,
+  ActivityIndicator,
   Image,
   ImageBackground,
   SafeAreaView,
@@ -11,14 +11,12 @@ import {
 import React, {useEffect, useState} from 'react';
 import {COLORS, FONTFAMILY, FONTSIZE, SPACING} from '../theme/Theme';
 import LinearGradient from 'react-native-linear-gradient';
-import {
-  GoogleSignin,
-  statusCodes,
-} from '@react-native-google-signin/google-signin';
+import {GoogleSignin} from '@react-native-google-signin/google-signin';
 import {GOOGLE_CLIENT_ID} from '@env';
 
 const Login = () => {
   const [userInfo, setUserInfo] = useState(null);
+  const [loader, setLoader] = useState(false);
   const handleGoogleSignIn = async () => {
     try {
       await GoogleSignin.hasPlayServices();
@@ -26,9 +24,11 @@ const Login = () => {
       if (res) {
         console.log(res.user);
         setUserInfo(res.user);
+        setLoader(false);
       }
     } catch (error) {
       console.log(error);
+      setLoader(false);
     }
   };
 
@@ -58,17 +58,30 @@ const Login = () => {
               Embark on a Journey of Discovery
             </Text>
             <TouchableOpacity
-              onPress={() => handleGoogleSignIn()}
-              activeOpacity={0.8}
+              onPress={() => {
+                setLoader(true);
+                handleGoogleSignIn();
+              }}
+              activeOpacity={1}
               style={styles.Button}>
-              <Image
-                style={styles.Icon}
-                source={require('../assets/images/google.png')}></Image>
-              <Text style={styles.ButtonText}>Continue with Google</Text>
+              {!loader && (
+                <>
+                  <Image
+                    style={styles.Icon}
+                    source={require('../assets/images/google.png')}></Image>
+                  <Text style={styles.ButtonText}>Continue with Google</Text>
+                </>
+              )}
+              {loader && (
+                <ActivityIndicator
+                  animating={loader}
+                  size={31}
+                  color={COLORS.blackDark}></ActivityIndicator>
+              )}
             </TouchableOpacity>
             <TouchableOpacity
               onPress={() => handleAppleSignIn()}
-              activeOpacity={0.8}
+              activeOpacity={1}
               style={styles.Button}>
               <Image
                 style={styles.Icon}
