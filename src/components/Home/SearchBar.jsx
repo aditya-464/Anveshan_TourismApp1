@@ -14,7 +14,7 @@ const SearchBar = props => {
   const [value, setValue] = useState('Find your destination...');
   return (
     <TouchableOpacity activeOpacity={1} style={styles.SearchBar}>
-      <AntDesign name="search1" size={18} color={COLORS.greyDark}></AntDesign>
+      <AntDesign name="search1" size={20} color={COLORS.greyDark}></AntDesign>
       <TextInput
         editable={editable}
         style={styles.SearchText}

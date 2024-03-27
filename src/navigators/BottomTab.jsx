@@ -16,39 +16,37 @@ const BottomTab = () => {
   return (
     <Tab.Navigator
       // initialRouteName="HomeScreen"
-      screenOptions={({route}) => ({
-        tabBarHideOnKeyboard: true,
-        headerShown: false,
-        tabBarShowLabel: false,
-        // tabBarStyle: styles.tabBarStyle,
-        tabBarStyle: {
-          //   display: route.name === 'CartScreen' ? 'none' : 'flex',
-          height: 60,
-          position: 'absolute',
-          backgroundColor: COLORS.primaryLight,
-          borderTopWidth: 0,
-          elevation: 0,
-          borderTopColor: 'transparent',
-        },
-      })}
-      // screenOptions={{
+      // screenOptions={({route}) => ({
       //   tabBarHideOnKeyboard: true,
       //   headerShown: false,
       //   tabBarShowLabel: false,
-      //   tabBarStyle: styles.tabBarStyle,
-      //   //
-      //   tabBarLabelStyle: styles.tabBarLabelStyle,
-      //   tabBarActiveTintColor: COLORS.secondaryDark,
-      //   tabBarInactiveTintColor: COLORS.placeholder,
-      //   tabBarBackground: () => (
-      //     <BlurView
-      //       overlayColor=""
-      //       blurAmount={1}
-      //       style={styles.BlurViewStyles}
-      //     />
-      //   ),
-      // }}
-    >
+      //   // tabBarStyle: styles.tabBarStyle,
+      //   tabBarStyle: {
+      //     //   display: route.name === 'CartScreen' ? 'none' : 'flex',
+      //     height: 60,
+      //     position: 'absolute',
+      //     backgroundColor: COLORS.primaryLight,
+      //     borderTopWidth: 0,
+      //     elevation: 0,
+      //     borderTopColor: 'transparent',
+      //   },
+      // })}
+      screenOptions={{
+        tabBarHideOnKeyboard: true,
+        headerShown: false,
+        tabBarShowLabel: false,
+        tabBarStyle: styles.tabBarStyle,
+        // tabBarLabelStyle: styles.tabBarLabelStyle,
+        tabBarActiveTintColor: COLORS.orange,
+        tabBarInactiveTintColor: COLORS.greyDark,
+        tabBarBackground: () => (
+          <BlurView
+            overlayColor=""
+            blurAmount={15}
+            style={styles.BlurViewStyles}
+          />
+        ),
+      }}>
       <Tab.Screen
         name="Home"
         component={Home}
@@ -111,8 +109,8 @@ const BottomTab = () => {
 
 const styles = StyleSheet.create({
   // tabBarLabelStyle: {
-  //   fontFamily: FONTFAMILY.poppins_medium,
-  //   fontSize: FONTSIZE.size_12,
+  //   fontFamily: FONTFAMILY.harmattan_medium,
+  //   fontSize: FONTSIZE.size_14,
   //   marginBottom: SPACING.space_8,
   // },
   tabBarStyle: {
