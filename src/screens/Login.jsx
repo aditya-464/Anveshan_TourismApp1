@@ -3,6 +3,7 @@ import {
   Image,
   ImageBackground,
   SafeAreaView,
+  StatusBar,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -46,6 +47,9 @@ const Login = () => {
 
   return (
     <SafeAreaView style={{flex: 1, width: '100%', height: '100%'}}>
+      <StatusBar
+        backgroundColor={COLORS.blackDark}
+        barStyle={'light-content'}></StatusBar>
       <ImageBackground
         style={styles.ImageBackground}
         source={require('../assets/images/ok3.jpg')}>
