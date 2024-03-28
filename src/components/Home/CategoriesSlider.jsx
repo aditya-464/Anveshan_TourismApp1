@@ -142,12 +142,11 @@ const styles = StyleSheet.create({
   },
   FlatList: {},
   ItemCard: {
-    paddingLeft: SPACING.space_20,
     alignItems: 'center',
   },
   ItemText: {
     fontFamily: FONTFAMILY.cormorantInfant_medium,
-    fontSize: FONTSIZE.size_18,
+    fontSize: FONTSIZE.size_16,
     color: COLORS.greyLight,
     marginBottom: SPACING.space_2,
   },

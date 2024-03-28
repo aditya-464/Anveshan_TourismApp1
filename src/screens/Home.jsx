@@ -3,6 +3,7 @@ import React from 'react';
 import {COLORS, FONTFAMILY, FONTSIZE, SPACING} from '../theme/Theme';
 import SearchBar from '../components/Home/SearchBar';
 import CategoriesSlider from '../components/Home/CategoriesSlider';
+import PlacesSlider from '../components/Home/PlacesSlider';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Text style={styles.TitleText}>Let's Explore Incredible India</Text>
         <SearchBar editable={false}></SearchBar>
         <CategoriesSlider></CategoriesSlider>
+        <PlacesSlider></PlacesSlider>
       </ScrollView>
     </SafeAreaView>
   );

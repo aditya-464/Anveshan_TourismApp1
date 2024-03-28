@@ -42,7 +42,7 @@ const BottomTab = () => {
         tabBarBackground: () => (
           <BlurView
             overlayColor=""
-            blurAmount={15}
+            blurAmount={25}
             style={styles.BlurViewStyles}
           />
         ),
