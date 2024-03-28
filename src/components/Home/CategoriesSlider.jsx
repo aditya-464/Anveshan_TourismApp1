@@ -14,11 +14,21 @@ const dummyData = [
   {
     id: 'Monuments',
     name: 'Monuments',
+    active: 1,
+  },
+  {
+    id: 'Palaces',
+    name: 'Palaces',
     active: 0,
   },
   {
     id: 'Temples',
     name: 'Temples',
+    active: 0,
+  },
+  {
+    id: 'Forts',
+    name: 'Forts',
     active: 0,
   },
   {
@@ -34,7 +44,7 @@ const dummyData = [
   {
     id: 'Parks',
     name: 'Parks',
-    active: 1,
+    active: 0,
   },
   {
     id: 'Museums',
