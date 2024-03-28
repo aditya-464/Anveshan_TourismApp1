@@ -5,7 +5,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import React, {useState} from 'react';
+import React, {memo, useState} from 'react';
 import AntDesign from 'react-native-vector-icons/dist/AntDesign';
 import {COLORS, FONTFAMILY, SPACING} from '../../theme/Theme';
 
@@ -33,11 +33,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 10,
     paddingHorizontal: SPACING.space_15,
-    marginVertical: SPACING.space_20,
+    marginHorizontal: SPACING.space_20,
+    marginBottom: SPACING.space_20,
   },
   SearchText: {
     fontFamily: FONTFAMILY.harmattan_regular,
-    fontSize: 16,
+    fontSize: 18,
     color: COLORS.greyDark,
     marginLeft: SPACING.space_10,
   },
